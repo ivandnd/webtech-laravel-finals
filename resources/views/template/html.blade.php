@@ -14,7 +14,7 @@
             <li><a href="{{route('events')}}">Events</a></li>
             <li><a href="{{route('register')}}">Register</a></li>
             @if (auth()->check())
-            <li><a href="#">Logout</a></li>
+            <li><a href="{{route('logout.user')}}">Logout</a></li>
             @else
             <li><a href="{{route('login')}}">Login</a></li>
             @endif
